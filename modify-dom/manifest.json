@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Modif. DOM",
+  "version": "1.0",
+  "description": "Search youtube video title, add subtitle",
+  "permissions": ["scripting", "activeTab",  "webRequest",
+  "webRequestBlocking","storage"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
